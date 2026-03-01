@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://burakyapiinsaat.com/</loc>
+    
+    <image:image>
+      <image:loc>https://burakyapiinsaat.com/pnglogo.png</image:loc>
+      <image:title>Burak Yapı ve İnşaat Logo</image:title>
+      <image:caption>Burak Yapı Ankara Kurumsal Logo</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://burakyapiinsaat.com/background.png</image:loc>
+      <image:title>Burak Yapı İnşaat Projeleri</image:title>
+      <image:caption>Anahtar Teslim İnşaat ve Premium Tadilat Uygulamaları</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&amp;w=2070&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>Kurumsal Plaza ve İş Merkezi Projesi</image:title>
+      <image:caption>Modern dış cephe mimarisi ve plaza yapımı</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&amp;w=2071&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>Lüks Villa ve Konak Tasarımı</image:title>
+      <image:caption>Kişiye özel havuzlu lüks villa projeleri</image:caption>
+    </image:image>
+
+  </url>
+</urlset>
