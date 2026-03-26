@@ -1,0 +1,20 @@
+{
+  "name": "Burak Yapı & İnşaat",
+  "short_name": "Burak Yapı",
+  "description": "Ankara merkezli anahtar teslim inşaat, lüks dekorasyon ve modern restorasyon çözümleri.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a192f",
+  "theme_color": "#0a192f",
+  "orientation": "portrait-primary",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/assets/logo/pnglogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business"]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "p1",
+    "title": "Banyo ve Mutfak Yenileme",
+    "category": "Modern ve Fonksiyonel Tasarımlar",
+    "image": "assets/images/banyo1.webp",
+    "images": [
+      "assets/images/banyo1.webp",
+      "assets/images/banyo2.webp",
+      "assets/images/mutfak1.webp",
+      "assets/images/mutfak2.webp"
+    ],
+    "description": "Evinizin en dinamik alanlarını modern, fonksiyonel ve estetik bir yapıya kavuşturuyoruz. Mevcut yapının sökümü, su ve elektrik tesisatlarının güvenli bir şekilde yenilenmesi, milimetrik seramik, granit veya mermer döşeme işlemleri ile projenize özel ölçülerde dolap ve tezgah kurulumlarını eksiksiz olarak tamamlıyoruz.",
+    "delay": 0
+  },
+  {
+    "id": "p2",
+    "title": "Profesyonel Alçı ve Boya Uygulamaları",
+    "category": "Kusursuz Yüzeyler & Dekoratif Teknikler",
+    "image": "assets/images/alci.webp",
+    "images": [
+      "assets/images/alci.webp",
+      "assets/images/alci2.webp",
+      "assets/images/alci3.webp",
+      "assets/images/alci4.webp"
+    ],
+    "description": "Mekanlarınıza değer katan, uzun ömürlü ve kusursuz yüzeyler oluşturuyoruz. Saten alçı uygulamaları, iç ve dış cephe boya işlemleri, dekoratif boya teknikleri ve duvar kağıdı kaplamaları birinci sınıf malzemeler ve titiz bir işçilikle gerçekleştirilmektedir. Doğru malzeme seçimi ve pürüzsüz uygulama garantisi ile mekanınızın atmosferini tamamen yeniliyoruz.",
+    "delay": 100
+  },
+  {
+    "id": "p3",
+    "title": "Anahtar Teslim Komple Tadilat",
+    "category": "A'dan Z'ye Planlama & Dekorasyon",
+    "image": "assets/images/komple.webp",
+    "images": [
+      "assets/images/komple.webp",
+      "assets/images/komple2.webp",
+      "assets/images/komple3.webp",
+      "assets/images/komple4.webp"
+    ],
+    "description": "Ev ve ofisleriniz için A'dan Z'ye planlama, projelendirme ve uygulama hizmeti sunuyoruz. Yıkım, hafriyat, altyapı yenileme, ince işçilik ve dekoratif dokunuşları tek elden, profesyonel bir ekiple yönetiyoruz. Zamanında teslimat, şeffaf süreç yönetimi ve yüksek kalite prensibiyle yaşam alanlarınızı beklentilerinizin ötesinde baştan yaratıyoruz.",
+    "delay": 200
+  }
+]
