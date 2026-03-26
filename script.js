@@ -14,7 +14,7 @@ if (typeof AOS !== 'undefined') {
     duration: 800,
     once: true,
     offset: 60,
-    disable: window.innerWidth < 480 ? "mobile" : false,
+    disable: 'mobile', // Use AOS built-in mobile detection
   });
 }
 
@@ -110,6 +110,11 @@ if (portfolioGrid) {
         
         portfolioGrid.innerHTML += projectHTML;
       });
+
+      // Refresh AOS to detect newly added items
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
     })
     .catch(error => {
       console.error("Projeler yüklenirken hata oluştu:", error);

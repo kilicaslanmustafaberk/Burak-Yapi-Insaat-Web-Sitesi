@@ -1586,7 +1586,8 @@
           padding: 70px 5%;
         }
         .work-grid {
-          grid-template-columns: 1fr;
+          display: flex; /* Ensure it stays flex */
+          flex-direction: column;
           gap: 16px;
         }
         .work-card, .work-card:nth-child(even) {
@@ -1665,6 +1666,12 @@
         }
         .modal-content {
           padding: 30px 20px;
+        }
+
+        /* Force AOS visibility when disabled on mobile */
+        [data-aos] {
+          opacity: 1 !important;
+          transform: none !important;
         }
       }
 
