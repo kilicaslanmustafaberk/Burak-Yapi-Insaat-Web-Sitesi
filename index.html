@@ -22,7 +22,7 @@
     <title>
       Burak Yapı & İnşaat | Ankara Anahtar Teslim İnşaat & Lüks Dekorasyon
     </title>
-    <link rel="shortcut icon" href="assets/logo/pnglogo.png" />
+    <link rel="shortcut icon" href="assets/logo/logo.webp" />
 
     <meta
       name="description"
@@ -57,14 +57,11 @@
     <link rel="preload" href="assets/videos/arkaplan.mp4" as="video" type="video/mp4" />
 
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></noscript>
 
     <!-- Ana Stil Dosyası -->
     <link rel="stylesheet" href="styles.css" />
@@ -83,7 +80,7 @@
       content="black-translucent"
     />
     <meta name="apple-mobile-web-app-title" content="Burak Yapı" />
-    <link rel="apple-touch-icon" href="assets/logo/pnglogo.png" />
+    <link rel="apple-touch-icon" href="assets/logo/logo.webp" />
 
     <!-- Open Graph enhancements -->
     <meta
@@ -115,7 +112,7 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Burak Yapı & İnşaat",
-        "image": "https://burakyapiinsaat.com/assets/logo/pnglogo.png",
+        "image": "https://burakyapiinsaat.com/assets/logo/logo.webp",
         "@id": "https://burakyapiinsaat.com/",
         "url": "https://burakyapiinsaat.com/",
         "telephone": "+905364481906",
@@ -151,7 +148,7 @@
         "@id": "https://burakyapiinsaat.com/#organization",
         "name": "Burak Yapı & İnşaat",
         "url": "https://burakyapiinsaat.com",
-        "logo": "https://burakyapiinsaat.com/assets/logo/pnglogo.png",
+        "logo": "https://burakyapiinsaat.com/assets/logo/logo.webp",
         "sameAs": ["https://www.instagram.com/burakyapi_insaat/"]
       }
     </script>
@@ -448,11 +445,11 @@
       <div class="ba-container" data-aos="fade-up" data-aos-delay="100">
         <div class="ba-slider">
           <div class="ba-image ba-before">
-            <img src="assets/images/before.webp" alt="Öncesi - Eski Hal" />
+            <img loading="lazy" src="assets/images/before.webp" alt="Öncesi - Eski Hal" />
             <span class="ba-label label-before">ÖNCESİ</span>
           </div>
           <div class="ba-image ba-after">
-            <img src="assets/images/after.webp" alt="Sonrası - Yeni Hal" />
+            <img loading="lazy" src="assets/images/after.webp" alt="Sonrası - Yeni Hal" />
             <span class="ba-label label-after">SONRASI</span>
           </div>
           <input
