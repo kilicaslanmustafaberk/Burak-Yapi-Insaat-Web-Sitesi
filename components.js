@@ -1,4 +1,4 @@
-/* ========== BURAK YAPI & İNŞAAT – SHARED COMPONENTS ========== */
+/* ========== BRK YAPI & DEKORASYON – SHARED COMPONENTS ========== */
 /* Navbar, Footer ve WhatsApp butonunu tüm sayfalara inject eder. */
 
 /**
@@ -37,8 +37,7 @@ function loadNavbar(activePage) {
 
     <header id="main-header">
       <a href="${logoHref}" class="logo-container">
-        <img src="assets/logo/pnglogo.png" alt="Burak Yapı Logo" class="logo-img" />
-        <div class="logo-text">BURAK<span>YAPI</span></div>
+        <div class="logo-text">BRK<span>YAPI & DEKORASYON</span></div>
       </a>
       <nav>
         <ul>
@@ -109,7 +108,7 @@ function loadFooter() {
     <footer id="contact">
       <div class="footer-main">
         <div class="footer-logo">
-          <div class="logo-text">BURAK<span>YAPI</span></div>
+          <div class="logo-text">BRK<span>YAPI & DEKORASYON</span></div>
           <p>
             Türkiye'nin her noktasında yaşanabilir, güvenli ve modern alanlar
             inşa ediyoruz. Kalite ve güvenin adresi.
@@ -155,7 +154,7 @@ function loadFooter() {
         </div>
       </div>
       <div class="copyright">
-        © 2026 Burak Yapı & İnşaat. Tüm Hakları Saklıdır. | Excellence in Engineering
+        © 2026 BRK Yapı & Dekorasyon. Tüm Hakları Saklıdır. | Excellence in Design
         <br>
         <span style="font-size: 0.75rem; opacity: 0.6; margin-top: 6px; display: inline-block;">
           Powered By <a href="https://skyframedijital.com.tr" target="_blank" rel="noopener noreferrer" style="color: var(--secondary); text-decoration: none;">SkyFrame Dijital</a>
@@ -187,7 +186,7 @@ function loadFloatingSocials() {
         <i class="fab fa-whatsapp"></i>
       </a>
       <a
-        href="https://www.instagram.com/burakyapi_insaat"
+        href="https://www.instagram.com/burakyapi.dekorasyon"
         class="ig-float floating-btn"
         target="_blank"
         aria-label="Instagram'da Takip Edin"
@@ -323,7 +322,7 @@ function loadContactModal() {
     const service = document.getElementById('service').value;
     const message = document.getElementById('message').value;
 
-    const whatsappMessage = `Merhaba Burak Yapı, web sitenizden yeni bir teklif talebi var:\n\n👤 *İsim:* ${name}\n📱 *Telefon:* ${phone}\n🏢 *İlgilenilen Hizmet:* ${service}\n📝 *Proje Detayı:* ${message}`;
+    const whatsappMessage = `Merhaba BRK Yapı, web sitenizden yeni bir teklif talebi var:\n\n👤 *İsim:* ${name}\n📱 *Telefon:* ${phone}\n🏢 *İlgilenilen Hizmet:* ${service}\n📝 *Proje Detayı:* ${message}`;
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappURL = `https://api.whatsapp.com/send?phone=905364481906&text=${encodedMessage}`;
 

@@ -1,4 +1,4 @@
-// Burak Yapı & İnşaat — Service Worker (Network-First with Offline Fallback)
+// BRK Yapı & Dekorasyon — Service Worker (Network-First with Offline Fallback)
 const CACHE_NAME = "burak-yapi-v1";
 const OFFLINE_URL = "/404.html";
 

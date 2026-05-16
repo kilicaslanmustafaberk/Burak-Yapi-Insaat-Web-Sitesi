@@ -1,4 +1,4 @@
-/* ========== BURAK YAPI & İNŞAAT – MAIN SCRIPT ========== */
+/* ========== BRK YAPI & DEKORASYON – MAIN SCRIPT ========== */
 /* Preloader, AOS animasyonları ve sayaç mantığını yönetir. */
 
 // Preloader
