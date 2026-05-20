@@ -147,7 +147,7 @@ function loadFooter() {
             <div>
               <h6>E-Posta Adresi</h6>
               <p>
-                <a href="mailto:insaatburakyapi@gmail.com">insaatburakyapi@gmail.com</a>
+                <a href="mailto:info@burakyapiinsaat.com">info@burakyapiinsaat.com</a>
               </p>
             </div>
           </div>
