@@ -165,6 +165,7 @@ function loadFooter() {
 
 /**
  * WhatsApp ve Instagram floating butonlarını oluşturur.
+ * Üstünde ortak firma logoları döner carousel yer alır.
  */
 function loadFloatingSocials() {
   let ph = document.getElementById('floating-socials-container');
@@ -173,6 +174,28 @@ function loadFloatingSocials() {
     ph.id = 'floating-socials-container';
     document.body.appendChild(ph);
   }
+
+  // Ortak firma logoları
+  const partnerLogos = [
+    { src: 'assets/images/ortaklar/vitra.webp', alt: 'Vitra' },
+    { src: 'assets/images/ortaklar/artema.webp', alt: 'Artema' },
+    { src: 'assets/images/ortaklar/jotun.webp', alt: 'Jotun' },
+    { src: 'assets/images/ortaklar/hafele_logo.webp', alt: 'Häfele' },
+    { src: 'assets/images/ortaklar/blum.webp', alt: 'Blum' },
+    { src: 'assets/images/ortaklar/bien.webp', alt: 'Bien' },
+    { src: 'assets/images/ortaklar/camsan.webp', alt: 'Çamsan' },
+    { src: 'assets/images/ortaklar/bocchi.webp', alt: 'Bocchi' },
+    { src: 'assets/images/ortaklar/agt.webp', alt: 'AGT' },
+    { src: 'assets/images/ortaklar/electric.webp', alt: 'Electric' },
+    { src: 'assets/images/ortaklar/kütahya.webp', alt: 'Kütahya Seramik' },
+    { src: 'assets/images/ortaklar/serifoglu.webp', alt: 'Şerifoğlu' },
+    { src: 'assets/images/ortaklar/weber.webp', alt: 'Weber' },
+  ];
+
+  // Sonsuz kaydırma için logoları 2 kere tekrarla
+  const logosHTML = [...partnerLogos, ...partnerLogos]
+    .map(logo => `<div class="partner-logo-item"><img src="${logo.src}" alt="${logo.alt}" loading="lazy" /></div>`)
+    .join('');
 
   ph.innerHTML = `
     <div class="floating-socials">
@@ -194,7 +217,32 @@ function loadFloatingSocials() {
         <span>Bizi Takip Edin</span>
         <i class="fab fa-instagram"></i>
       </a>
+    </div>
+    <div class="partner-island" id="partnerIsland">
+      <div class="partner-island-inner">
+        <div class="partner-track">
+          ${logosHTML}
+        </div>
+      </div>
+      <div class="partner-island-label">Çözüm Ortaklarımız</div>
     </div>`;
+
+  // Partner island'ı sadece hero section görünürken göster
+  const partnerIsland = document.getElementById('partnerIsland');
+  if (partnerIsland) {
+    const heroSection = document.getElementById('home');
+    if (heroSection) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          partnerIsland.classList.toggle('visible', entry.isIntersecting);
+        });
+      }, { threshold: 0.15 });
+      observer.observe(heroSection);
+    } else {
+      // Hero yoksa her zaman göster
+      partnerIsland.classList.add('visible');
+    }
+  }
 }
 
 /**

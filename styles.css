@@ -869,7 +869,7 @@
       }
       .map-overlay-card {
         position: absolute;
-        top: 50%;
+        top: 35%;
         left: 8%;
         transform: translateY(-50%);
         background: rgba(10, 25, 47, 0.92);
@@ -1101,6 +1101,119 @@
       .ig-float:hover {
         width: 220px;
         filter: brightness(1.1);
+      }
+
+      /* --- Partner Island (Çözüm Ortakları Carousel) --- */
+      .partner-island {
+        position: fixed;
+        right: -10px;
+        bottom: 220px;
+        width: 240px;
+        height: 0;
+        overflow: hidden;
+        border-radius: 24px 0 0 24px;
+        background: var(--secondary);
+        border: none;
+        box-shadow: -8px 0 40px rgba(255, 180, 0, 0.3),
+                    0 8px 30px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateX(100%);
+        transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+                    opacity 0.5s ease,
+                    transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        z-index: 998;
+      }
+      .partner-island.visible {
+        height: 360px;
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .partner-island-inner {
+        width: 100%;
+        height: calc(100% - 34px);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 16px 0;
+        mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+      }
+      .partner-track {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        animation: partnerScroll 20s linear infinite;
+      }
+      .partner-logo-item {
+        flex-shrink: 0;
+        width: 190px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 10px;
+        padding: 10px 16px;
+        transition: all 0.3s ease;
+        margin: 0 auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .partner-logo-item:hover {
+        background: #ffffff;
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+      .partner-logo-item img {
+        max-width: 140px;
+        max-height: 42px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+      .partner-logo-item:hover img {
+        transform: scale(1.05);
+      }
+      .partner-island-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 0.6rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--primary);
+        padding: 9px 0;
+        background: rgba(255, 180, 0, 0.95);
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 0 0 0 24px;
+      }
+
+      @keyframes partnerScroll {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-50%);
+        }
+      }
+
+      /* Partner island duraklatma */
+      .partner-island:hover .partner-track {
+        animation-play-state: paused;
+      }
+
+      @keyframes partnerScrollMobile {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
       }
 
       /* ========================
@@ -1607,6 +1720,15 @@
         .project-desc {
           font-size: 0.95rem;
         }
+        .project-gallery {
+          order: -1;
+          margin-top: 0;
+          margin-bottom: 20px;
+          padding-top: 0;
+          border-top: none;
+          border-bottom: 1px solid #f0f0f0;
+          padding-bottom: 20px;
+        }
 
         .location-map {
           height: auto;
@@ -1660,6 +1782,55 @@
         }
         .floating-btn:hover {
           width: 50px !important;
+        }
+        .partner-island {
+          top: 70px;
+          bottom: auto;
+          right: 0;
+          left: 0;
+          width: 100%;
+          height: 0 !important;
+          border-radius: 0;
+          transform: translateY(-100%);
+          box-shadow: 0 4px 20px rgba(255, 180, 0, 0.25);
+        }
+        .partner-island.visible {
+          height: 95px !important;
+          transform: translateY(0);
+        }
+        .partner-island-inner {
+          height: calc(100% - 24px);
+          padding: 0 10px;
+          margin-top: 24px;
+          mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+          -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+          align-items: center;
+        }
+        .partner-track {
+          flex-direction: row;
+          gap: 14px;
+          animation: partnerScrollMobile 18s linear infinite;
+        }
+        .partner-logo-item {
+          width: auto;
+          min-width: 100px;
+          height: 42px;
+          padding: 6px 14px;
+          flex-shrink: 0;
+        }
+        .partner-logo-item img {
+          max-width: 80px;
+          max-height: 28px;
+        }
+        .partner-island-label {
+          display: block;
+          top: 0;
+          bottom: auto;
+          border-radius: 0;
+          border-top: none;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          font-size: 0.55rem;
+          padding: 5px 0;
         }
         .section-tag {
           margin-bottom: 45px;
